@@ -11,6 +11,8 @@ import PrivateRoute from "./PrivateRoute";
 import AddPost from "../pages/addPost/AddPost";
 import MyPosts from "../pages/myPosts/MyPosts";
 import PostDetails from "../pages/postDetails/PostDetails";
+import UpdatePost from "../pages/updatePost/UpdatePost";
+import BeVolunteer from "../pages/beAVolunteer/BeVolunteer";
 
 
   const router = createBrowserRouter([
@@ -24,6 +26,10 @@ import PostDetails from "../pages/postDetails/PostDetails";
             element:<Home></Home>,
         },
         {
+          path:"/addPost",
+          element:<PrivateRoute><AddPost></AddPost></PrivateRoute>,
+        },
+        {
             path: "/allPosts",
             element: <AllPost></AllPost>,
             loader : () => fetch("http://localhost:5000/posts"),
@@ -34,12 +40,19 @@ import PostDetails from "../pages/postDetails/PostDetails";
           loader: ({params}) => fetch(`http://localhost:5000/posts/${params.id}`),
         },
         {
-           path:"/addPost",
-           element:<PrivateRoute><AddPost></AddPost></PrivateRoute>,
+          path: "/beVolunteer/:id",
+          element: <PrivateRoute><BeVolunteer></BeVolunteer></PrivateRoute>,
+          loader: ({params}) => fetch(`http://localhost:5000/posts/${params.id}`),
         },
         {
-          path: "/myPosts",
+          path: "/myPosts/:email",
           element:<PrivateRoute><MyPosts></MyPosts></PrivateRoute>,
+          loader: ({params}) => fetch(`http://localhost:5000/posts/email/${params.email}`),
+        },
+        {
+          path: "/updatePost/:id",
+          element:<PrivateRoute><UpdatePost></UpdatePost></PrivateRoute>,
+          loader:({params}) => fetch(`http://localhost:5000/posts/${params.id}`),
         },
         {
           path: "/register",

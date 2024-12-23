@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const PostDetails = () => {
@@ -6,6 +6,7 @@ const PostDetails = () => {
   const { user } = useAuth;
 
   const {
+    _id,
     organizerName,
     organizerEmail,
     postTitle,
@@ -28,7 +29,7 @@ const PostDetails = () => {
           <p className="py-6">
            {description}
           </p>
-          <button className="btn btn-primary">Be a Volunteer</button>
+          <Link to={`/beVolunteer/${_id}`} className="btn btn-primary">Be a Volunteer</Link>
         </div>
       </div>
     </div>

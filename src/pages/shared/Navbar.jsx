@@ -16,12 +16,10 @@ const Navbar = () => {
           <summary>My Profile</summary>
           <ul className="p-2 bg-orange-400">
             <li><NavLink to="/addPost">Add Post</NavLink></li>
-            <li><NavLink to="/myPosts" >My Posts</NavLink ></li>
+            <li><NavLink to={`/myPosts/${user?.email}`} >My Posts</NavLink ></li>
           </ul>
         </details>
       </li>
-
-       
         
         </>
       );
