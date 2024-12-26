@@ -3,11 +3,12 @@ import useAuth from "../../hooks/useAuth";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const AddPost = () => {
   const { user, theme } = useAuth();
   const { displayName, email } = user;
-
+  const navigate = useNavigate();
   const [startDate, setStartDate] = useState(new Date());
 
   const handleAddVolunteer = (e) => {
@@ -55,6 +56,7 @@ const AddPost = () => {
           showConfirmButton: false,
           timer: 1500
         });
+        navigate(`/myPosts/${user?.email}`);
       }
     })
   };
