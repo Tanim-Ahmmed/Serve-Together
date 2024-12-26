@@ -12,7 +12,7 @@ const PostCard = ({ post }) => {
       <div className="card-body items-center text-center">
         <h2 className="card-title">{postTitle}</h2>
         <p>{category}</p>
-        <p>{deadline}</p>
+        <p>{deadline.split("T")[0]}</p>
         <p>{volunteersNeeded}</p>
         <div className="card-actions">
           <Link to={`/postDetails/${_id}`}

@@ -71,7 +71,7 @@ const AddPost = () => {
         >
           <div className="text-center">
             <h1 className="text-2xl font-bold ">
-              Add Your Volunteer Need Post
+              Add Volunteer Need Post
             </h1>
           </div>
           <form onSubmit={handleAddVolunteer} className="card-body">
