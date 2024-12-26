@@ -1,9 +1,11 @@
+import img from "../../assets/icon.webp"
 const Footer = () => {
   return (
     <footer className="footer footer-center bg-neutral text-neutral-content w-full">
       <div className="footer bg-neutral text-neutral-content px-10 pt-10">
         <aside>
-          <p className="font-bold">
+          <img src={img} alt="" className="w-10 mx-auto" />
+          <p className="font-bold ">
           ServeTogether
             <br />A Volunteer management System
           </p>

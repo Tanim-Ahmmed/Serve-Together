@@ -9,7 +9,6 @@ const MyPosts = () => {
   const myAllPosts = useLoaderData();
   const [posts, setPosts] = useState(myAllPosts);
 
-  console.log(posts);
 
   const handleDeletePost = (id) => {
     Swal.fire({

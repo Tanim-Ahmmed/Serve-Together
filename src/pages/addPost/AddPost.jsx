@@ -37,8 +37,6 @@ const AddPost = () => {
       deadline,
     };
 
-    console.table(volunteersNeedPost);
-
     fetch("https://assignment-server-ochre-eight.vercel.app/posts", {
       method: "POST",
       headers:{
@@ -66,7 +64,7 @@ const AddPost = () => {
       <div className="hero bg-base-100 min-h-screen ">
         <div
           className={`card w-full shrink-0 rounded-none p-10 md:max-w-[800px] ${
-            theme === "dark" ? "bg-gray-700" : "bg-orange-200"
+            theme === "dark" ? "bg-gray-700 shadow-lg" : "bg-base-200 shadow-lg"
           }`}
         >
           <div className="text-center">

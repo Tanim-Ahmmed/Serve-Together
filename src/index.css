@@ -12,3 +12,7 @@
   font-style: normal;
 
 }
+
+.carousel {
+  z-index: 0; /* Keep it below the navbar */
+}

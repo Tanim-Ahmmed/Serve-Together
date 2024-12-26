@@ -8,7 +8,6 @@ const AllPost = () => {
   const [allPosts, setAllPosts] = useState(initialPosts);
   const [search, setSearch] = useState("");
   const [table, setTable] = useState(false);
-  console.log(table);
   useEffect(() => {
     fetch(
       `https://assignment-server-ochre-eight.vercel.app/posts?searchParams=${search}`
@@ -24,7 +23,7 @@ const AllPost = () => {
       <div className="flex items-center justify-between p-6 my-6 rounded-md">
         <div>
           <h2 className="text-lg font-semibold justify-center hidden sm:flex">
-            All voluteer need posts
+            All volunteer need posts
           </h2>
         </div>
       </div>

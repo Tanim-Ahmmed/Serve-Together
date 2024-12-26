@@ -16,7 +16,7 @@ const PostCard = ({ post }) => {
         <p>{volunteersNeeded}</p>
         <div className="card-actions">
           <Link to={`/postDetails/${_id}`}
-           className="btn btn-neutral">View Details</Link>
+           className="btn btn-neutral rounded-3xl">View Details</Link>
         </div>
       </div>
     </div>

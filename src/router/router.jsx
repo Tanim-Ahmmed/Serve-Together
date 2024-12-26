@@ -24,7 +24,7 @@ import BeVolunteer from "../pages/beAVolunteer/BeVolunteer";
         {
             path: "/",
             element:<Home></Home>,
-            loader: () => fetch("http://localhost:5000/post/upcoming")
+            loader: () => fetch("https://assignment-server-ochre-eight.vercel.app/post/upcoming")
         },
         {
           path:"/addPost",

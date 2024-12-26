@@ -59,7 +59,7 @@ const UpdatePost = () => {
     .then(res => res.json())
     .then(data => {
         if(data.modifiedCount > 0){
-            console.log(data);
+            // console.log(data);
             Swal.fire({
                 title: "Congrats!",
                 text: "Your Volunteer Need Post Updated Successfully!",
@@ -76,7 +76,7 @@ const UpdatePost = () => {
       <div className="hero bg-base-100 min-h-screen ">
         <div
           className={`card w-full shrink-0 rounded-none p-10 md:max-w-[800px] ${
-            theme === "dark" ? "bg-gray-700" : "bg-orange-200"
+            theme === "dark" ? "bg-gray-700" : "bg-base-200 shadow-lg"
           }`}
         >
           <div className="text-center">

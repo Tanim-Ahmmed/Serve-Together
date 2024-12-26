@@ -14,7 +14,7 @@ const Navbar = () => {
       <li>
         <details>
           <summary>My Profile</summary>
-          <ul className="p-2 bg-orange-400">
+          <ul className="p-2 bg-[#1A1A2E]">
             <li>
               <NavLink to="/addPost">Add Post</NavLink>
             </li>
@@ -28,7 +28,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-orange-400 text-white sm:w-11/12 mx-auto">
+    <div className="navbar fixed top-0 left-0 right-0 text-orange-400 bg-[#1A1A2E] sm:w-11/12 mx-auto z-50 shadow-lg">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,17 +49,17 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-orange-400 rounded-box z-[1] mt-3 w-52 p-2 shadow "
+            className="menu menu-sm dropdown-content bg-[#1A1A2E] rounded-box z-[1] mt-3 w-52 p-2 shadow "
           >
             {links}
           </ul>
         </div>
-        <Link className="btn btn-ghost hidden sm:flex  text-xl font-bold">
+        <Link className="btn btn-ghost hidden sm:flex text-xl font-bold">
           ServeTogether
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 ">{links}</ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end gap-4">
         <div>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 data-tip={user?.displayName}
               >
                 <div className="avatar online">
-                  <div className="w-10 rounded-full ">
+                  <div className="w-10 rounded-full">
                     <img src={user.photoURL} />
                   </div>
                 </div>
@@ -90,14 +90,14 @@ const Navbar = () => {
             <Link
               to="/"
               onClick={logOut}
-              className=" py-2 px-4 link-hover bg-orange-600 text-white font-bold hover:border-2 rounded-md"
+              className="py-2 px-4 link-hover bg-orange-400 rounded-3xl text-white font-bold hover:border-2"
             >
               LogOut
             </Link>
           ) : (
             <Link
               to="/login"
-              className="py-2 px-4 link-hover bg-orange-600 text-white font-bold hover:border-2 rounded-md"
+              className="py-2 px-4 link-hover bg-orange-400 text-white font-bold hover:border-2 rounded-3xl"
             >
               Login
             </Link>
