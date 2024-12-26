@@ -4,8 +4,7 @@
 ServeTogether is a platform that connects volunteers with posts in need of assistance. Users can browse available posts, apply to be a volunteer, and manage their volunteer requests. This platform allows users to add posts, view posts based on specific categories, and track their volunteer applications.
 
 ## Live URL
-You can view the live project at: [https://assignment-11-5bae2.web.app/]
-
+You can view the live project at: [Visit the live site](https://assignment-11-5bae2.web.app/)
 ## Key Features
 - **User Authentication**: Users can register, log in, and authenticate via Google.
 - **Post Management**: Users can create, view, and update their posts. 
