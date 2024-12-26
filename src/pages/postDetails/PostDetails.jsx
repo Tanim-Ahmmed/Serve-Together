@@ -1,9 +1,7 @@
 import { Link, useLoaderData } from "react-router-dom";
-import useAuth from "../../hooks/useAuth";
 
 const PostDetails = () => {
   const post = useLoaderData();
-  const { user } = useAuth;
 
   const {
     _id,
