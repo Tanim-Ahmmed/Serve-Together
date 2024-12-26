@@ -23,8 +23,25 @@ const Register = () => {
     const confirm = form.confirm.value;
 
     const user = { name, email, photo, password, confirm };
+    
+    if(password.length < 6){
+      setErr("Passward must contain atleast 6 character.")
+      return;
+    }
+    if(!/[a-z]/.test(password)){
+      setErr("Passward must contain atleast one lowercase latter. ")
+        return;
+    }
+    if(!/[A-Z]/.test(password)){
 
-    console.log(user);
+      setErr("Passward must contain atleast one uppercase latter. ");
+      return;
+  }
+    if(password !== confirm){
+      setErr("Passward didn't match")
+      return;
+    }
+
 
     createUser(email, password)
       .then((result) => {
