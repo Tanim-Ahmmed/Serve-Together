@@ -20,14 +20,7 @@ const AllPost = () => {
 
   return (
     <div className="sm:w-11/12 mx-auto my-8">
-      <div className="flex items-center justify-between p-6 my-6 rounded-md">
-        <div>
-          <h2 className="text-lg font-semibold justify-center hidden sm:flex">
-            All volunteer need posts
-          </h2>
-        </div>
-      </div>
-      <div className="flex m-6">
+      <div className="flex p-6">
         <input
           type="text"
           onChange={(e) => setSearch(e.target.value)}

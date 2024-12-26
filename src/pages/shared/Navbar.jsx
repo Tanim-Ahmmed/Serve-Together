@@ -28,8 +28,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar fixed top-0 left-0 right-0 text-orange-400 bg-[#1A1A2E] sm:w-11/12 mx-auto z-50 shadow-lg">
-      <div className="navbar-start">
+    <div className="navbar max-w-7xl mx-auto fixed top-0 left-0 right-0 text-orange-400 bg-[#1A1A2E]   z-50 shadow-lg">
+      <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg

@@ -18,7 +18,7 @@ const Home = () => {
       });
   }, []);
   return (
-    <div className="sm:w-11/12 mx-auto">
+    <div className="">
       <div className="carousel  w-full mb-10 max-h-96">
         <div id="slide1" className="carousel-item relative w-full">
           <img src={img4} className="w-full object-cover" />
