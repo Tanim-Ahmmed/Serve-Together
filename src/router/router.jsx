@@ -24,6 +24,7 @@ import BeVolunteer from "../pages/beAVolunteer/BeVolunteer";
         {
             path: "/",
             element:<Home></Home>,
+            loader: () => fetch("http://localhost:5000/post/upcoming")
         },
         {
           path:"/addPost",
@@ -32,27 +33,27 @@ import BeVolunteer from "../pages/beAVolunteer/BeVolunteer";
         {
             path: "/allPosts",
             element: <AllPost></AllPost>,
-            loader : () => fetch("http://localhost:5000/posts"),
+            loader : () => fetch("https://assignment-server-ochre-eight.vercel.app/posts"),
         },
         {
           path: "/PostDetails/:id",
           element: <PrivateRoute><PostDetails></PostDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/posts/${params.id}`),
+          loader: ({params}) => fetch(`https://assignment-server-ochre-eight.vercel.app/posts/${params.id}`),
         },
         {
           path: "/beVolunteer/:id",
           element: <PrivateRoute><BeVolunteer></BeVolunteer></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/posts/${params.id}`),
+          loader: ({params}) => fetch(`https://assignment-server-ochre-eight.vercel.app/posts/${params.id}`),
         },
         {
           path: "/myPosts/:email",
           element:<PrivateRoute><MyPosts></MyPosts></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/posts/email/${params.email}`),
+          loader: ({params}) => fetch(`https://assignment-server-ochre-eight.vercel.app/posts/email/${params.email}`),
         },
         {
           path: "/updatePost/:id",
           element:<PrivateRoute><UpdatePost></UpdatePost></PrivateRoute>,
-          loader:({params}) => fetch(`http://localhost:5000/posts/${params.id}`),
+          loader:({params}) => fetch(`https://assignment-server-ochre-eight.vercel.app/posts/${params.id}`),
         },
         {
           path: "/register",

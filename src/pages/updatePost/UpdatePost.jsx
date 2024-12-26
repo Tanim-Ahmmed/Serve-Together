@@ -1,14 +1,14 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import DatePicker from "react-datepicker";
 import { useState } from "react";
 import Swal from "sweetalert2";
 
 const UpdatePost = () => {
-  const { theme } = useAuth();
+  const { theme , user} = useAuth();
 
   const VolunteerNeedPost = useLoaderData();
-
+  const navigate = useNavigate();
   const {
     organizerName,
     organizerEmail,
@@ -49,7 +49,7 @@ const UpdatePost = () => {
         deadline
     }
      
-    fetch(`http://localhost:5000/posts/${_id}`, {
+    fetch(`https://assignment-server-ochre-eight.vercel.app/posts/${_id}`, {
         method: "PUT",
         headers:{
             'Content-Type': 'application/json'
@@ -65,6 +65,7 @@ const UpdatePost = () => {
                 text: "Your Volunteer Need Post Updated Successfully!",
                 icon: "success"
               });
+              navigate(`/myPosts/${user?.email}`);
         }
     })
 

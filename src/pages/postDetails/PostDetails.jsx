@@ -29,7 +29,7 @@ const PostDetails = () => {
           <p className="py-6">
            {description}
           </p>
-          <Link to={`/beVolunteer/${_id}`} className="btn btn-primary">Be a Volunteer</Link>
+          <Link to={`/beVolunteer/${_id}`} className={` ${volunteersNeeded > 0 ? "btn btn-primary" : "btn btn-disabled"}` }>Be a Volunteer</Link>
         </div>
       </div>
     </div>

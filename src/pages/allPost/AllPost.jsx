@@ -10,7 +10,7 @@ const AllPost = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/posts?searchParams=${search}`)
+    fetch(`https://assignment-server-ochre-eight.vercel.app/posts?searchParams=${search}`)
     .then((res)=> res.json())
     .then((data) => {
       setAllPosts(data);
@@ -26,21 +26,19 @@ const AllPost = () => {
           </h2>
         </div>
 
-        <div className="flex text-3xl gap-3">
-          {" "}
-          <LiaTableSolid /> <MdTableRows />
-        </div>
+       
       </div>
       <div className="flex m-6">
         <input
           type="text"
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search volunteer posts..."
+          placeholder="Search volunteer post by title"
           className="input input-bordered w-full rounded-l-3xl rounded-r-none"
         />
-        <button className="px-6 bg-gray-400 rounded-r-3xl text-lg font-semibold">
-          Search
-        </button>
+        <div className="flex text-3xl gap-3 p-2">
+         
+         <LiaTableSolid /> <MdTableRows />
+       </div>
       </div>
 
       <div className="grid grid-cols-1 m-6 sm:m-0  md:grid-cols-2 lg:grid-cols-3 gap-4">

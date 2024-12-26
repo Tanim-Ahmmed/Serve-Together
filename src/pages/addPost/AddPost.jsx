@@ -39,7 +39,7 @@ const AddPost = () => {
 
     console.table(volunteersNeedPost);
 
-    fetch("http://localhost:5000/posts", {
+    fetch("https://assignment-server-ochre-eight.vercel.app/posts", {
       method: "POST",
       headers:{
         'Content-Type' : 'application/json'
