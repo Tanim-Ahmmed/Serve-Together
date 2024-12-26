@@ -45,12 +45,12 @@ const MyVolunteerRequest = () => {
   }, [user.email]);
   return (
     <div className="sm:w-11/12  mx-auto min-h-screen flex justify-center my-8">
-      {myRequest?.length > 0 ? (
+    
         <div className="w-full sm:p-10 ">
           <h3 className="text-xl font-bold text-orange-400 text-center py-6">
             My Requests
           </h3>
-
+          {myRequest?.length > 0 ? (
           <div className="overflow-x-auto ">
             <table className="table ">
               <thead>
@@ -92,10 +92,11 @@ const MyVolunteerRequest = () => {
               ))}
             </table>
           </div>
+           ) : (
+            <h2 className="text-lg font-bold text-center">No Request Data has been Added Yet</h2>
+          )}
         </div>
-      ) : (
-        <h2 className="text-lg font-bold ">No Data has been Added Yet</h2>
-      )}
+     
     </div>
   );
 };

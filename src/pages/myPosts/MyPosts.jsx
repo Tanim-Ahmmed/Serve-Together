@@ -43,12 +43,12 @@ const MyPosts = () => {
 
   return (
     <div className="sm:w-11/12 mx-auto min-h-screen flex flex-col justify-center my-8">
-      {posts?.length > 0 ? (
+   
         <div className="w-full sm:p-10 ">
           <h3 className="text-xl font-bold text-orange-400 text-center py-6">
             My posts
           </h3>
-
+          {posts?.length > 0 ? (
           <div className="overflow-x-auto">
             <table className="table">
               <thead>
@@ -95,10 +95,12 @@ const MyPosts = () => {
               ))}
             </table>
           </div>
-        </div>
-      ) : (
-        <h2 className="text-lg font-bold text-center">No Data has been Added Yet</h2>
+
+        ) : (
+        <h2 className="text-lg font-bold min-h-44 text-center">No Post has been Added Yet</h2>
       )}
+        </div>
+    
       <MyVolunteerRequest></MyVolunteerRequest>
     </div>
   );
