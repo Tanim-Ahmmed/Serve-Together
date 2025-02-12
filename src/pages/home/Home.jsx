@@ -5,6 +5,7 @@ import Slider from "./Slider";
 import { motion } from "framer-motion";
 import useAuth from "../../hooks/useAuth";
 import { FaPeopleLine } from "react-icons/fa6";
+import Feedback from "./Feedback";
 const Home = () => {
   const [postCount, setPostCount] = useState(0);
   const { theme } = useAuth();
@@ -18,7 +19,7 @@ const Home = () => {
       });
   }, []);
   return (
-    <div className="">
+    <div >
       <Slider></Slider>
       <div className=" pt-10 bg-base-200">
         <div className="container mx-auto px-4">
@@ -158,7 +159,9 @@ const Home = () => {
                 </div>
               </motion.div>
             </div>
-        
+          <div>
+          <Feedback></Feedback>
+          </div>
       </div>
     </div>
   );
