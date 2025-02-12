@@ -41,7 +41,7 @@ const MyPosts = () => {
   };
 
   return (
-    <div className="sm:w-11/12 mx-auto min-h-screen flex flex-col justify-center my-8">
+    <div className="sm:w-11/12 max-w-7xl mx-auto min-h-screen flex flex-col justify-center my-8">
    
         <div className="w-full sm:p-10 ">
           <h3 className="text-xl font-bold text-orange-400 text-center py-6">

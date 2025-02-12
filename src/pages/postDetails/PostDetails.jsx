@@ -15,9 +15,9 @@ const PostDetails = () => {
     deadline,
   } = post;
   return (
-    <div className="pb-72 sm:pb-60 md:pb-32 lg:pb-0 ">
+    <div className=" mx-auto pb-72 sm:pb-60 md:pb-32 lg:pb-0 ">
       <div className="relative  m-auto mb-96 bg-[#1A1A2E]  pb-36 sm:pb-40 md:pb-56 lg:pb-64">
-        <div className="text-center text-white py-6">
+        <div className="max-w-7xl mx-auto text-center text-white py-6">
           <h1 className="py-6 font-bold text-3xl ">Volunteer Post Details</h1>
           <div className="flex flex-col justify-start">
             
@@ -26,7 +26,7 @@ const PostDetails = () => {
           </div>
         
         </div>
-        <div className=" absolute  transform -translate-x-1/2 bg-white left-1/2  shadow-xl rounded-xl w-10/12 p-2">
+        <div className="max-w-7xl  absolute  transform -translate-x-1/2 bg-gray-500 left-1/2  shadow-xl rounded-xl w-10/12 p-2">
           <div className="hero-content flex-col lg:flex-row  gap-10">
             <img
               src={thumbnail}

@@ -19,7 +19,7 @@ const AllPost = () => {
   }, [search]);
 
   return (
-    <div className="sm:w-11/12 mx-auto my-8">
+    <div className="max-w-7xl sm:w-11/12 mx-auto my-8">
       <div className="flex p-6">
         <input
           type="text"
