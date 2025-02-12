@@ -31,7 +31,7 @@ const PostCard = ({ post }) => {
         <div className="card-actions mt-4 ">
           <Link
             to={`/postDetails/${_id}`}
-            className="btn btn-neutral rounded-3xl px-6 py-2 text-white bg-neutral hover:bg-neutral-dark"
+            className="bg-orange-500 text-white px-6 py-2 rounded-3xl hover:bg-orange-600 transition"
           >
             View Details
           </Link>

@@ -59,7 +59,7 @@ const Home = () => {
         ))}
       </div>
       <div className="w-full mx-auto py-6 flex justify-center">
-        <Link to="/allPosts" className="btn btn-neutral px-20 rounded-3xl">
+        <Link to="/allPosts"  className="bg-orange-500 text-white px-10 border border-orange-700 py-2  rounded-3xl hover:bg-orange-600 transition">
           See All
         </Link>
       </div>
