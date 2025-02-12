@@ -1,7 +1,9 @@
 import { Link, useLoaderData } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const PostDetails = () => {
   const post = useLoaderData();
+  const { theme } = useAuth();
 
   const {
     _id,
@@ -26,13 +28,16 @@ const PostDetails = () => {
           </div>
         
         </div>
-        <div className="max-w-7xl  absolute  transform -translate-x-1/2 bg-gray-500 left-1/2  shadow-xl rounded-xl w-10/12 p-2">
+        <div 
+
+        className={`max-w-7xl  absolute  transform -translate-x-1/2  left-1/2  shadow-xl rounded-xl w-10/12 p-2 ${
+                  theme === "dark" ? "bg-black" : "bg-white" }`}>
           <div className="hero-content flex-col lg:flex-row  gap-10">
             <img
               src={thumbnail}
               className="max-w-sm rounded-lg w-full h-full object-cover shadow-2xl "
             />
-            <div>
+            <div className="">
               <h1 className="text-xl font-bold">{postTitle}</h1>
               <p className="font-semibold pt-3 ">
                 Deadline: {deadline.split("T")[0]}
@@ -42,12 +47,12 @@ const PostDetails = () => {
               </p>
               <p className="py-3">{description}</p>
 
-              <div className="py-3">
+              <div className="py-3 ">
                 <Link
                   to={`/beVolunteer/${_id}`}
-                  className={` ${
+                  className={`  ${
                     volunteersNeeded > 0
-                      ? "btn btn-neutral rounded-3xl"
+                      ? "btn text-black bg-orange-400 hover:bg-orange-500 rounded-3xl"
                       : "btn btn-disabled"
                   }`}
                 >

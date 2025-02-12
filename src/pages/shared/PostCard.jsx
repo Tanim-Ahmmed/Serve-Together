@@ -32,7 +32,7 @@ const PostCard = ({ post }) => {
         <div className="card-actions mt-4 ">
           <Link
             to={`/postDetails/${_id}`}
-            className="bg-orange-500 text-white px-6 py-2 rounded-3xl hover:bg-orange-600 transition"
+            className="flex justify-center items-center gap-3 bg-orange-500 text-white px-6 py-2 rounded-3xl hover:bg-orange-600 transition"
           >
             View Details <FaRegArrowAltCircleRight/>
           </Link>
