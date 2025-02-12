@@ -19,7 +19,7 @@ const PostCard = ({ post }) => {
         <h2 className="card-title">{postTitle}</h2>
         <p className="text-base-900">
           Volunteer Needed:{" "}
-          <span className="bg-green-200 py-1 px-5 border border-green-600 rounded-3xl font-bold">
+          <span className=" py-1 px-5 border border-[#1A1A2E] rounded-3xl font-bold">
             {" "}
             {volunteersNeeded}{" "}
           </span>{" "}

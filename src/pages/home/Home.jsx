@@ -97,11 +97,11 @@ const Home = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-3 md:gap-4 max-w-7xl mx-auto">
               <motion.div 
                 className={`group relative bg-gradient-to-br  rounded-2xl p-4 md:p-6  transition-all duration-300 ${
-                  theme === "dark" ? "from-purple-500/10 to-blue-500/10 hover:from-purple-500/20 hover:to-blue-500/20" : "from-blue-900/60 to-black/50 hover:from-purple-500/70 hover:to-blue-500/10 " }`}
+                  theme === "dark" ? "from-orange-500/20 to-blue-500/10 hover:from-orange-500/20 hover:to-blue-500/20" : "from-orange-900/60 to-black/50 hover:from-orange-500/70 hover:to-blue-500/10 " }`}
                 whileHover={{ scale: 1.02 }}
               >
                 <div className="absolute inset-0.5 rounded-[14px] bg-black/50 -z-10 backdrop-blur-sm"></div>
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-20"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-20"></div>
                 <div className="flex flex-col items-center text-center">
                   <div className="h-10 w-10 md:h-12 md:w-12 rounded-xl bg-white/5 flex items-center justify-center mb-4">
                     <FaPeopleLine className="w-5 h-5 md:w-6 md:h-6 text-white" />
@@ -114,11 +114,11 @@ const Home = () => {
             
               <motion.div 
                 className={`group relative bg-gradient-to-br  rounded-2xl p-4 md:p-6  transition-all duration-300 ${
-                  theme === "dark" ? "from-purple-500/10 to-blue-500/10 hover:from-purple-500/20 hover:to-blue-500/20" : "from-blue-900/60 to-black/50 hover:from-purple-500/70 hover:to-blue-500/10 " }`}
+                  theme === "dark" ? "from-orange-500/10 to-blue-500/10 hover:from-orange-500/20 hover:to-blue-500/20" : "from-orange-900/60 to-black/50 hover:from-orange-500/70 hover:to-blue-500/10 " }`}
                 whileHover={{ scale: 1.02 }}
               >
                 <div className="absolute inset-0.5 rounded-[14px] bg-black/50 -z-10 backdrop-blur-sm"></div>
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-20"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-20"></div>
                 <div className="flex flex-col items-center text-center">
                   <div className="h-10 w-10 md:h-12 md:w-12 rounded-xl bg-white/5 flex items-center justify-center mb-4">
                     <FaPeopleLine className="w-5 h-5 md:w-6 md:h-6 text-white" />
@@ -129,11 +129,11 @@ const Home = () => {
               </motion.div>
               <motion.div 
                 className={`group relative bg-gradient-to-br  rounded-2xl p-4 md:p-6  transition-all duration-300 ${
-                  theme === "dark" ? "from-purple-500/10 to-blue-500/10 hover:from-purple-500/20 hover:to-blue-500/20" : "from-blue-900/60 to-black/50 hover:from-purple-500/70 hover:to-blue-500/10 " }`}
+                  theme === "dark" ? "from-orange-500/10 to-blue-500/10 hover:from-orange-500/20 hover:to-blue-500/20" : "from-orange-900/60 to-black/50 hover:from-orange-500/70 hover:to-blue-500/10 " }`}
                 whileHover={{ scale: 1.02 }}
               >
                 <div className="absolute inset-0.5 rounded-[14px] bg-black/50 -z-10 backdrop-blur-sm"></div>
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-20"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-20"></div>
                 <div className="flex flex-col items-center text-center">
                   <div className="h-10 w-10 md:h-12 md:w-12 rounded-xl bg-white/5 flex items-center justify-center mb-4">
                     <FaPeopleLine className="w-5 h-5 md:w-6 md:h-6 text-white" />
@@ -144,11 +144,11 @@ const Home = () => {
               </motion.div>
               <motion.div 
                 className={`group relative bg-gradient-to-br  rounded-2xl p-4 md:p-6  transition-all duration-300 ${
-                  theme === "dark" ? "from-purple-500/10 to-blue-500/10 hover:from-purple-500/20 hover:to-blue-500/20" : "from-blue-900/60 to-black/50 hover:from-purple-500/70 hover:to-blue-500/10 " }`}
+                  theme === "dark" ? "from-orange-500/10 to-blue-500/10 hover:from-orange-500/20 hover:to-blue-500/20" : "from-orange-900/60 to-black/50 hover:from-orange-500/70 hover:to-blue-500/10 " }`}
                 whileHover={{ scale: 1.02 }}
               >
                 <div className="absolute inset-0.5 rounded-[14px] bg-black/50 -z-10 backdrop-blur-sm"></div>
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-20"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-20"></div>
                 <div className="flex flex-col items-center text-center">
                   <div className="h-10 w-10 md:h-12 md:w-12 rounded-xl bg-white/5 flex items-center justify-center mb-4">
                     <FaPeopleLine className="w-5 h-5 md:w-6 md:h-6 text-white" />
