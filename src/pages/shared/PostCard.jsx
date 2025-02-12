@@ -1,3 +1,4 @@
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
@@ -33,7 +34,7 @@ const PostCard = ({ post }) => {
             to={`/postDetails/${_id}`}
             className="bg-orange-500 text-white px-6 py-2 rounded-3xl hover:bg-orange-600 transition"
           >
-            View Details
+            View Details <FaRegArrowAltCircleRight/>
           </Link>
         </div>
       </div>
