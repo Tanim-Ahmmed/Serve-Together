@@ -29,7 +29,7 @@ You can view the live project at: [Visit the live site](https://assignment-11-5b
 - `tailwindcss`: ^3.0.0
 - `sweetalert2`: ^11.0.0
 - `react-toastify`: ^9.0.0
-- `react-icons`: ^4.0.0
+- `react-icons`: ^4.0.0.
 
 ## Installation Instructions
 1. Clone the repository:
